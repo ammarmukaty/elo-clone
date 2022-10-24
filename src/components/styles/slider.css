@@ -1,0 +1,33 @@
+.carousel-control-prev-b{
+      bottom: -87%;
+  justify-content: space-between;
+}
+.carousel-control-next-b{
+    bottom: -87%;
+    right:-4%
+}
+
+.carousel-indicators-b [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 10px; /* change width */
+    height: 10px; /* change height */
+    padding: 0;
+    margin-right: 9px;
+    margin-left: 9px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: gray;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: 1;
+    transition: opacity .6s ease;
+    border-radius: 100%;  /* add border-radius */
+}
+.carousel-indicators-b .active {
+    
+    background-color: black;
+   
+}

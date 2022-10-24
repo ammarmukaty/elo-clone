@@ -1,0 +1,78 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", "sans-serif";
+}
+nav{
+  position: relative;
+  z-index: 99;
+  width: 100%;
+  background: #232f3e;
+}
+nav .wrapper{
+  padding: 0px 15px;
+  height: 55px;
+  line-height: 70px;
+  margin: auto;
+}
+.wrapper .nav-links{
+  display: inline-flex;
+}
+.nav-links li{
+  list-style: none;
+}
+.nav-links li a{
+  text-decoration: none;
+
+
+}
+.nav-links .mobile-item{
+  display: none;
+}
+.nav-links li:hover .mega-box{
+  transition: all 0.3s ease;
+  top: 68px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.mega-box{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+}
+.mega-box .content{
+  background: #eaeaea;
+  padding: 25px 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+
+}
+.mega-box .content .row{
+  width: calc(25% - 30px);
+  line-height: 45px;
+}
+.mega-box .content .row a:hover{
+  color: #f19100b0;
+}
+
+.content .row .mega-links{
+  margin-left: -40px;
+}
+.row .mega-links li{
+  padding: 0 20px;
+}
+.row .mega-links li a{
+  padding: 0 20px;
+  color: #404040;
+
+}
+.row .mega-links li a:hover{
+  color: #f19100b0;
+}
