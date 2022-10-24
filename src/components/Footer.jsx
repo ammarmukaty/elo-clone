@@ -4,11 +4,15 @@ import { footer } from "../data/dummy";
 import { Link } from "react-router-dom";
 import { Button } from ".";
 import { IoLogoGooglePlaystore } from "react-icons/io5";
+import { AiFillStar } from "react-icons/ai";
 
 const Footer = () => {
   return (
     <div className="w-full bottom-0 justify-center">
-      <div className=" flex justify-evenly " style={{ background: "#232f3e" }}>
+      <div
+        className=" flex justify-evenly pt-5"
+        style={{ background: "#232f3e" }}
+      >
         {footer.map((item, index) => (
           <div key={index} className="">
             <p className="text-white font-bold text-xl block pb-3">
@@ -57,8 +61,37 @@ const Footer = () => {
             to 05:30 PM Monday - Saturday )
           </p>
         </div>
-        <div>
-          <img src="https://staticw2.yotpo.com/assets/badge.png" alt="badge" />
+        <div className="relative">
+          <img
+            src="https://staticw2.yotpo.com/assets/badge.png"
+            className="block relative pt-3"
+            width="180px"
+            alt="badge"
+          />
+          <div
+            className="absolute  p-1 "
+            style={{ zIndex: "1000", bottom: "8.6rem", right: "1.5rem" }}
+          >
+            <p className="text-white font-semibold text-2xl">174K</p>
+            <div className="pb-2 pl-4 flex text-yellow-500">
+              <p>
+                <AiFillStar />
+              </p>
+              <p>
+                <AiFillStar />
+              </p>
+              <p>
+                <AiFillStar />
+              </p>
+              <p>
+                <AiFillStar />
+              </p>
+              <p>
+                <AiFillStar />
+              </p>
+            </div>
+            <p>cerfitied rewiews</p>
+          </div>
         </div>
       </div>
       <div className="flex bg-white px-10 py-2 pl-80">
